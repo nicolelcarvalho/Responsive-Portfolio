@@ -272,6 +272,7 @@ header {
 	border-color: #dddddd;
 }
 
+
 input[type=submit] {
 	height: 50px;
 	width: 100px;
@@ -282,6 +283,11 @@ input[type=submit] {
 	cursor: pointer;
 	font-size: 14px;
 	margin-top: 20px;
+}
+
+input[type=text] {
+	background-color: #ffffff;
+	border: 1px solid #dddddd;
 }
 
 
@@ -324,6 +330,7 @@ input[type=submit] {
 		margin-bottom: 40px;
 		margin-top: 0;
 		display: block;
+		position: static;
 	}
 
 	#main-nav {
@@ -346,7 +353,7 @@ input[type=submit] {
 
 	#main-nav li a {
 		display: block;
-		padding: 2px 30px 0 30px;
+		padding: 2px 55px 0 55px;
 		margin-top: -16px;
 		line-height: 50px;
 	}
@@ -715,6 +722,10 @@ input[type=submit] {
 
 		#main-content p, #contact-form p {
 			line-height: 1.9;
+		}
+
+		#main-content {
+			overflow: hidden;
 		}
 
 		.my-headshot {
