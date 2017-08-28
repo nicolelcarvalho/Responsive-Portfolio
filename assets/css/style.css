@@ -122,12 +122,6 @@ header {
 #main-logo {
 	background-color: #445778;
 	height: 80px;
-	animation-timing-function: ease-in;
-	-webkit-animation-timing-function: ease-in;
-    -webkit-animation: mymove 5s; /* Safari 4.0 - 8.0 */
-    animation: mymove 5s;
-    position: relative;
-
 }
 
 .logo {
@@ -135,6 +129,15 @@ header {
 	color: #ffffff;
 	padding: 10px 25px 10px 25px;
 }
+
+.logo-animation {
+	animation-timing-function: ease-in;
+	-webkit-animation-timing-function: ease-in;
+    -webkit-animation: mymove 5s; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s;
+    position: relative;
+}
+
 
 #main-logo:hover {
 	cursor: pointer;
@@ -315,6 +318,7 @@ input[type=text] {
 /***************** Media Queries *****************/
 
 
+
 @media only screen and (max-width: 640px) {
 
 	/***************** Main Content & Sidebar *****************/
@@ -441,8 +445,17 @@ input[type=text] {
 
 }
 
+@media only screen and (max-width: 493px) {
+	
+	#main-nav li a {
+		padding: 2px 15px 0 15px;
 
-	@media screen and (min-width: 641px) and (max-width: 768px) {
+	}
+
+}
+
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
 
 	/***************** Main Content & Sidebar *****************/
 
@@ -566,7 +579,7 @@ input[type=text] {
 
 
 
-	@media screen and (min-width: 700px) and (max-width: 768px) {
+@media screen and (min-width: 700px) and (max-width: 768px) {
 
 		#main-logo {
 			font-size: 15px;
@@ -580,7 +593,7 @@ input[type=text] {
 
 
 
-	@media screen and (min-width: 760px) and (max-width: 768px) {
+@media screen and (min-width: 760px) and (max-width: 768px) {
 
 		#main-logo {
 			font-size: 16px;
@@ -594,7 +607,7 @@ input[type=text] {
 
 
 
-	@media screen and (min-width: 769px) and (max-width: 968px) {
+@media screen and (min-width: 769px) and (max-width: 968px) {
 
 	
 	/***************** Main Content & Sidebar *****************/
@@ -673,7 +686,7 @@ input[type=text] {
 	}
 
 
-	@media screen and (min-width: 800px) and (max-width: 924px) {
+@media screen and (min-width: 800px) and (max-width: 924px) {
 
 		#main-nav ul {
 			display: inline-block;
@@ -688,7 +701,7 @@ input[type=text] {
 
 	}
 
-	@media screen and (min-width: 925px) and (max-width: 968px) {
+@media screen and (min-width: 925px) and (max-width: 968px) {
 
 		#main-nav ul {
 			display: inline-block;
@@ -704,7 +717,7 @@ input[type=text] {
 	}
 
 
-	@media screen and (min-width: 969px) and (max-width: 980px) {
+@media screen and (min-width: 969px) and (max-width: 980px) {
 
 	
 	/***************** Main Content & Sidebar *****************/
